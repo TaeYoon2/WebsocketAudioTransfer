@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<title>WebSocket Test Page</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdn.webrtc-experiment.com/ConcatenateBlobs.js"></script>
+<script src="./lib/recorder.js"></script>
+<link rel="stylesheet"
+	href="./css/index.css">
+</head>
+<body onload="onLoad()">
+	<div id="viz">
+		<canvas id="wavedisplay" width="1024" height="300"></canvas>
+		
+
+		<div id="resultOutput" class="scroll"></div>
+		<div id="confidence"></div>
+		<div id="statusOutput"></div>
+		<div id="controls">
+			<img id="record" onclick="toggleRecording(this);" src="./img/mic.png"
+				width="56" height="56">
+		</div>
+	</div>
+</body>
+</html>
